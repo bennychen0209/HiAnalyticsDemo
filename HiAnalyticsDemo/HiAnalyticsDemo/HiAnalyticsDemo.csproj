@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2545" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.4" />
+    <PackageReference Include="CardsView" Version="2.8.1" />
+    <PackageReference Include="Naxam.TopTabbedPage.Forms" Version="0.0.3.5" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+    <PackageReference Include="Plugin.FirebasePushNotification" Version="3.4.35" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
+    <PackageReference Include="Xam.Plugin.HtmlLabel" Version="5.1.0" />
+    <PackageReference Include="Xam.Plugin.WebView" Version="2.1.3" />
+    <PackageReference Include="Xam.Plugins.Forms.ImageCircle" Version="3.0.0.5" />
+    <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.4.11.982" />
+    <PackageReference Include="Xamarin.Build.Download" Version="0.11.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="CardsView" />
+    <None Remove="Naxam.TopTabbedPage.Forms" />
+    <None Remove="Newtonsoft.Json" />
+    <None Remove="Plugin.FirebasePushNotification" />
+    <None Remove="sqlite-net-pcl" />
+    <None Remove="Xam.Plugin.HtmlLabel" />
+    <None Remove="Xam.Plugin.WebView" />
+    <None Remove="Xam.Plugins.Forms.ImageCircle" />
+    <None Remove="Xamarin.FFImageLoading.Forms" />
+    <None Remove="Xamarin.Build.Download" />
+    <None Remove="Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\" />
+  </ItemGroup>
+</Project>

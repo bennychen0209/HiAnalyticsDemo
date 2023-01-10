@@ -1,0 +1,23 @@
+﻿<metadata>
+  <add-node path="/api/package[@name='com.tritondigital.util']">
+    <class abstract="false" deprecated="not deprecated" final="false" name="HttpGetRequest" static="true" visibility="public" extends="java.lang.Object"/>
+  </add-node>
+  <attr 
+   path="/api/package[@name='com.tritondigital.player']/class[@name='CuePointHistory.ParserTask']/method[@name='doInBackground' and count(parameter)=1 and parameter[1][@type='java.lang.Object[]']]"
+   name="visibility">protected</attr>
+  <attr 
+   path="/api/package[@name='com.tritondigital.player']/class[@name='Provisioning.ParserTask']/method[@name='doInBackground' and count(parameter)=1 and parameter[1][@type='java.lang.Object[]']]"
+   name="visibility">protected</attr>
+  <attr 
+   path="/api/package[@name='com.tritondigital.ads']/class[@name='AdLoader.VastParsingTask']/method[@name='doInBackground' and count(parameter)=1 and parameter[1][@type='java.lang.Object[]']]"
+   name="visibility">protected</attr>
+  <attr 
+   path="/api/package[@name='com.tritondigital.ads']/class[@name='Ad.TrackingUrlTask']/method[@name='doInBackground' and count(parameter)=1 and parameter[1][@type='java.lang.Object[]']]"
+   name="visibility">protected</attr>
+
+  <remove-node path="/api/package[@name='com.tritondigital.player']/interface[@name='Provisioning.Listener']" />
+  <remove-node path="/api/package[@name='com.tritondigital.player']/interface[@name='SbmSseClient.SseClientListener']" />
+  <remove-node path="/api/package[@name='com.tritondigital.player']/interface[@name='StationConnectionClient.Listener']" />
+  <remove-node path="/api/package[@name='com.tritondigital.player']/interface[@name='MediaPlayer.OnAnalyticsReceivedListener']" />
+</metadata>
+
